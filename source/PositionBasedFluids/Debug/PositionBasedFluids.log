@@ -1,0 +1,25 @@
+﻿Build started 12/6/2015 11:53:55 PM.
+     1>Project "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\PositionBasedFluids.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_LIB /D_MBCS /IE:\Mobeen\Libraries\glew-1.10.0\include /IE:\Mobeen\Libraries\glm-0.9.6.2 /IE:\Mobeen\Libraries\glfw\include /IE:\Mobeen\Libraries\DevIL-SDK-x86-1.7.8\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\ParticleSystem.cu" 
+       CudaBuild:
+         Compiling CUDA source file ParticleSystem.cu...
+         cmd.exe /C "C:\Users\Harley\AppData\Local\Temp\tmp30b2455f8a3c49dcb2188c1a3a7027bf.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"E:\Mobeen\Libraries\glew-1.10.0\include" -I"E:\Mobeen\Libraries\glm-0.9.6.2" -IE:\Mobeen\Libraries\glfw\include -I"E:\Mobeen\Libraries\DevIL-SDK-x86-1.7.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\ParticleSystem.cu.obj "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\ParticleSystem.cu"
+         
+         C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"E:\Mobeen\Libraries\glew-1.10.0\include" -I"E:\Mobeen\Libraries\glm-0.9.6.2" -IE:\Mobeen\Libraries\glfw\include -I"E:\Mobeen\Libraries\DevIL-SDK-x86-1.7.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\ParticleSystem.cu.obj "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\ParticleSystem.cu" 
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(555): error : identifier "device_ptr" is undefined
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(555): error : type name is not allowed
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(555): error : identifier "a" is undefined
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(555): error : expected a ")"
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(556): error : expected a ";"
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(610): warning : parsing restarts here after previous syntax error
+     1>C:/Users/Harley/cuda/PositionBasedFluids modify/PositionBasedFluids/ParticleSystem.cu(611): error : expected a declaration
+     1>At end of source : warning : parsing restarts here after previous syntax error
+         ParticleSystem.cu
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations\CUDA 7.5.targets(604,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"E:\Mobeen\Libraries\glew-1.10.0\include" -I"E:\Mobeen\Libraries\glm-0.9.6.2" -IE:\Mobeen\Libraries\glfw\include -I"E:\Mobeen\Libraries\DevIL-SDK-x86-1.7.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\ParticleSystem.cu.obj "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\ParticleSystem.cu"" exited with code 2.
+     1>Done Building Project "C:\Users\Harley\cuda\PositionBasedFluids modify\PositionBasedFluids\PositionBasedFluids.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.13
