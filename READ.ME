@@ -1,0 +1,36 @@
+ - Project description
+ 
+ Position based fluids is an open project that simulates fluid dynamics by having the represented particles interact with one another. This process involves complex physic mathematical models like Navier-stokes equation and priori method for collision detection.​
+ 
+ Source code adapted from: https://github.com/mmmovania/PositionBasedFluids
+ Original repository: https://github.com/korzen/PositionBasedFluids
+ 
+ - Computer requirements (OS/Compilers/CUDA requirements) 
+ 
+ Visual Studio 2013 (newer version won’t display the warnings that need to be fixed)
+ Nvidia CUDA toolkit 7.5
+ Nvidia Nsight Visual Studio version
+ 
+ - How to install
+ 
+ The main project is located in the appropriate folder name, and the rest are linkage libraries that are needed for compilation:
+ DevIL
+ freeglut
+ glew-1.13.0
+ glfw-3.1.2.bin.WIN64
+ glm
+ 
+ Once load up the project in Visual Studio, go to project->properties and add the appropriate additional library and header files in C/C++ and linker (look at the example path and change them to where you download the package). 
+
+ After that, try to compile to see if it works. There may be additional .dll files that need to be included (depend on your framework system). The output window will tell you what files are missing.
+ 
+ - A small test
+ 
+ 
+ 
+ - Team members
+ 
+ Linh Tran
+ Haolin Zheng
+ Ye Mei
+
